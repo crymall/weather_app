@@ -78,7 +78,7 @@ class Widget extends React.Component {
     return (
       <div>
         <div className="widget">{foreDays}</div>
-        <button onClick={this.toggleC} title="Change Units"> Change Units </button>
+        <button class="toggle-button" onClick={this.toggleC} title="Change Units"> Change Units </button>
       </div>
     );
   }

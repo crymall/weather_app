@@ -1109,7 +1109,7 @@ var Widget = function (_React$Component) {
         ),
         _react2.default.createElement(
           'button',
-          { onClick: this.toggleC, title: 'Change Units' },
+          { 'class': 'toggle-button', onClick: this.toggleC, title: 'Change Units' },
           ' Change Units '
         )
       );
