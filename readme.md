@@ -2,7 +2,7 @@
 
 ![screenshot](assets/screenshot.png)
 
-A simple responsive React app that renders the forecast in Farenheit or Celsius.
+A simple responsive React app that renders the forecast in Fahrenheit or Celsius.
 Not meant for production, made for a coding challenge.
 
 Note: In order to run this app properly, you will need API keys from
