@@ -1046,7 +1046,9 @@ var Widget = function (_React$Component) {
                 { className: 'day-name' },
                 day.dateTimeISO.slice(0, 10)
               ),
-              _react2.default.createElement('img', { src: 'https://raw.githubusercontent.com/crymall/weather_app/master/assets/' + day.icon + '?raw=true' }),
+              _react2.default.createElement('img', { className: 'weather-img',
+                src: 'https://raw.githubusercontent.com/crymall/weather_app/master/assets/' + day.icon + '?raw=true'
+              }),
               _react2.default.createElement(
                 'div',
                 { className: 'day-temps' },
@@ -1077,7 +1079,9 @@ var Widget = function (_React$Component) {
                 { className: 'day-name' },
                 day.dateTimeISO.slice(0, 10)
               ),
-              _react2.default.createElement('img', { src: 'https://raw.githubusercontent.com/crymall/weather_app/master/assets/' + day.icon + '?raw=true' }),
+              _react2.default.createElement('img', { className: 'weather-img',
+                src: 'https://raw.githubusercontent.com/crymall/weather_app/master/assets/' + day.icon + '?raw=true'
+              }),
               _react2.default.createElement(
                 'div',
                 { className: 'day-temps' },
@@ -1103,7 +1107,12 @@ var Widget = function (_React$Component) {
 
       return _react2.default.createElement(
         'div',
-        null,
+        { className: 'widget-container' },
+        _react2.default.createElement(
+          'h2',
+          null,
+          'NYC Weather'
+        ),
         _react2.default.createElement(
           'div',
           { className: 'widget' },
@@ -1111,7 +1120,7 @@ var Widget = function (_React$Component) {
         ),
         _react2.default.createElement(
           'button',
-          { 'class': 'toggle-button', onClick: this.toggleC, title: 'Change Units' },
+          { className: 'toggle-button', onClick: this.toggleC, title: 'Change Units' },
           ' Change Units '
         )
       );

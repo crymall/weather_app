@@ -55,7 +55,9 @@ class Widget extends React.Component {
                        .map((day, idx) => {
                          return <div className="day-item">
                            <h3 className="day-name">{day.dateTimeISO.slice(0, 10)}</h3>
-                           <img src={`https://raw.githubusercontent.com/crymall/weather_app/master/assets/${day.icon}?raw=true`}/>
+                           <img className="weather-img"
+                                src={`https://raw.githubusercontent.com/crymall/weather_app/master/assets/${day.icon}?raw=true`}
+                           />
                            <div className="day-temps">
                              <div className="temp-item">High: {day.maxTempC} °C</div>
                              <div className="temp-item">Low: {day.minTempC} °C</div>
@@ -67,7 +69,9 @@ class Widget extends React.Component {
                        .map((day, idx) => {
                          return <div className="day-item">
                            <h3 className="day-name">{day.dateTimeISO.slice(0, 10)}</h3>
-                           <img src={`https://raw.githubusercontent.com/crymall/weather_app/master/assets/${day.icon}?raw=true`}/>
+                           <img className="weather-img"
+                                src={`https://raw.githubusercontent.com/crymall/weather_app/master/assets/${day.icon}?raw=true`}
+                           />
                            <div className="day-temps">
                              <div className="temp-item">High: {day.maxTempF} °F</div>
                              <div className="temp-item">Low: {day.minTempF} °F</div>
@@ -78,9 +82,10 @@ class Widget extends React.Component {
     }
 
     return (
-      <div>
+      <div className="widget-container">
+        <h2>NYC Weather</h2>
         <div className="widget">{foreDays}</div>
-        <button class="toggle-button" onClick={this.toggleC} title="Change Units"> Change Units </button>
+        <button className="toggle-button" onClick={this.toggleC} title="Change Units"> Change Units </button>
       </div>
     );
   }
