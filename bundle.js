@@ -1042,10 +1042,11 @@ var Widget = function (_React$Component) {
               'div',
               { className: 'day-item' },
               _react2.default.createElement(
-                'h2',
+                'h3',
                 { className: 'day-name' },
                 day.dateTimeISO.slice(0, 10)
               ),
+              _react2.default.createElement('img', { src: 'https://raw.githubusercontent.com/crymall/weather_app/master/assets/' + day.icon + '?raw=true' }),
               _react2.default.createElement(
                 'div',
                 { className: 'day-temps' },
@@ -1072,10 +1073,11 @@ var Widget = function (_React$Component) {
               'div',
               { className: 'day-item' },
               _react2.default.createElement(
-                'h2',
+                'h3',
                 { className: 'day-name' },
                 day.dateTimeISO.slice(0, 10)
               ),
+              _react2.default.createElement('img', { src: 'https://raw.githubusercontent.com/crymall/weather_app/master/assets/' + day.icon + '?raw=true' }),
               _react2.default.createElement(
                 'div',
                 { className: 'day-temps' },

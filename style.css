@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  max-width: 1200px;
+  max-width: 1150px;
   flex-wrap: wrap;
   padding: 20px;
   background-color: lightgrey;
@@ -11,6 +11,6 @@
 }
 
 .day-item {
-  padding: 25px;
-  padding-bottom: 35px;
+  padding: 35px;
+  padding-top: 15px;
 }

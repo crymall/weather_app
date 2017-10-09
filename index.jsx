@@ -54,7 +54,8 @@ class Widget extends React.Component {
         foreDays = this.state.weather.periods
                        .map((day, idx) => {
                          return <div className="day-item">
-                           <h2 className="day-name">{day.dateTimeISO.slice(0, 10)}</h2>
+                           <h3 className="day-name">{day.dateTimeISO.slice(0, 10)}</h3>
+                           <img src={`https://raw.githubusercontent.com/crymall/weather_app/master/assets/${day.icon}?raw=true`}/>
                            <div className="day-temps">
                              <div className="temp-item">High: {day.maxTempC} °C</div>
                              <div className="temp-item">Low: {day.minTempC} °C</div>
@@ -65,7 +66,8 @@ class Widget extends React.Component {
         foreDays = this.state.weather.periods
                        .map((day, idx) => {
                          return <div className="day-item">
-                           <h2 className="day-name">{day.dateTimeISO.slice(0, 10)}</h2>
+                           <h3 className="day-name">{day.dateTimeISO.slice(0, 10)}</h3>
+                           <img src={`https://raw.githubusercontent.com/crymall/weather_app/master/assets/${day.icon}?raw=true`}/>
                            <div className="day-temps">
                              <div className="temp-item">High: {day.maxTempF} °F</div>
                              <div className="temp-item">Low: {day.minTempF} °F</div>
