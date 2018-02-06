@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-//stufff
+//stuf
 
 let myKey = config.MY_KEY;
 let secretKey = config.SECRET_KEY;
