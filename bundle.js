@@ -977,8 +977,6 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-// import merge from 'lodash/merge';
-
 var myKey = config.MY_KEY;
 var secretKey = config.SECRET_KEY;
 var url = 'http://api.aerisapi.com/forecasts/11101?client_id=' + myKey + '&client_secret=' + secretKey;
